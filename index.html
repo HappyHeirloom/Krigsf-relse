@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script   src="http://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+</head>
+
+<body>
+
+<div id="navbar">
+  <ul class="ul">
+    <header class="titlenav"> Krigsførelse i Middelalderen </header>
+    <center>
+    <li><a class="active" href="./index.html">Home</a></li>
+    <!-- <li class="dropdown">
+      <a href="#" class="dropbtn">Pokemon accounts</a>
+      <div class="dropdown-content">
+        <a href="./RioPixel.html">RioPixel</a>
+        <a href="./Noimista.html">Noimista</a>
+        <a href="./MrsAmazing.html">MrsAmazing</a>
+        <a href="./TheRealBeami.html">TheRealBeami</a>
+      </div>
+    </li> -->
+    </center>
+  </ul>
+</div>
+
+
+  <header>
+    <span class="toggle-button">
+          <div class="menu-bar menu-bar-top"></div>
+          <div class="menu-bar menu-bar-middle"></div>
+          <div class="menu-bar menu-bar-bottom"></div>
+    </span>
+
+    <div class="menu-wrap">
+      <div class="menu-sidebar">
+        <ul class="menu">
+          <div id="color">
+            <li class="menu-item-has-children"><a href="#">Våben</a>
+              <span class="sidebar-menu-arrow"></span>
+              <ul class="sub-menu">
+                <li><a href="spade.html"><img id="imginside" src="./spade.jpg"></img></a></li></br >
+                <li><a href="#"><img id="imginside" src="./spade.jpg"></img></a></li></br >
+                <li><a href="#">Comments</a></li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </div>
+    </div>
+  </header>
+
+  <script>
+  $(document).ready(function() {
+
+    var $toggleButton = $('.toggle-button'),
+        $menuWrap = $('.menu-wrap'),
+        $sidebarArrow = $('.sidebar-menu-arrow');
+
+    // Hamburger button
+
+    $toggleButton.on('click', function() {
+      $(this).toggleClass('button-open');
+      $menuWrap.toggleClass('menu-show');
+    });
+
+    // Sidebar navigation arrows
+
+    $sidebarArrow.click(function() {
+      $(this).next().slideToggle(300);
+    });
+
+  });
+  </script>
+
+
+  <!DOCTYPE html>
+  <html>
+    <meta charset="utf-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styletest.css">
+  </head>
+  <body>
+
+  <script>
+
+  setInterval(function() {
+      var left1 = parseInt($('#track1').css('left')),
+          left2 = parseInt($('#track2').css('left')),
+          left3 = parseInt($('#track3').css('left'));
+
+      if ($('#left1').is(":hover")) {
+          $('#track1').css('left', left1+2);
+      }
+      else if ($('#left2').is(":hover")) {
+          $('#track2').css('left', left2+2);
+      }
+      else if ($('#left3').is(":hover")) {
+          $('#track3').css('left', left3+2);
+      }
+      else if ($('#right1').is(":hover")) {
+          $('#track1').css('left', left1-2);
+      }
+      else if ($('#right2').is(":hover")) {
+          $('#track2').css('left', left2-2);
+      }
+      else if ($('#right3').is(":hover")) {
+          $('#track3').css('left', left3-2);
+      }
+  }, 10);
+
+  </script>
+
+  <h2> <center> Våben </center> </h2>
+
+  <div class="slider">
+    <div id="left1" class="left">&lt;</div>
+    <div id="right1" class="right">&gt;</div>
+    <div class="track" id="track1">
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+        <div class="våben">
+        </div>
+    </div>
+</div>
+
+  <h2> <center> Hjelme </center> </h2>
+
+<div class="slider">
+    <div id="left2" class="left">&lt;</div>
+    <div id="right2" class="right">&gt;</div>
+    <div class="track" id="track2">
+        <div class="hjelm">
+        </div>
+        <div class="hjelm">
+        </div>
+        <div class="hjelm">
+        </div>
+        <div class="hjelm">
+        </div>
+        <div class="hjelm">
+        </div>
+    </div>
+</div>
+
+  <h2> <center> Andet </center> </h2>
+
+<div class="slider">
+    <div id="left3" class="left">&lt;</div>
+    <div id="right3" class="right">&gt;</div>
+    <div class="track" id="track3">
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+        <div class="andet">
+        </div>
+    </div>
+</div>
+
+  </body>
+  </html>
+
+
+</body>
+
+</html>

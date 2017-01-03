@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+<head>
+  <link rel="stylesheet" type="text/css" href="styletest.css">
+</head>
+<body>
+
+<script>
+
+setInterval(function() {
+    var left1 = parseInt($('#track1').css('left')),
+        left2 = parseInt($('#track2').css('left')),
+        left3 = parseInt($('#track3').css('left'));
+
+    if ($('#left1').is(":hover")) {
+        $('#track1').css('left', left1+2);
+    }
+    else if ($('#left2').is(":hover")) {
+        $('#track2').css('left', left2+2);
+    }
+    else if ($('#left3').is(":hover")) {
+        $('#track3').css('left', left3+2);
+    }
+    else if ($('#right1').is(":hover")) {
+        $('#track1').css('left', left1-2);
+    }
+    else if ($('#right2').is(":hover")) {
+        $('#track2').css('left', left2-2);
+    }
+    else if ($('#right3').is(":hover")) {
+        $('#track3').css('left', left3-2);
+    }
+}, 10);
+
+</script>
+
+<div class="slider">
+    <div id="left1" class="left">&lt;</div>
+    <div id="right1" class="right">&gt;</div>
+    <div class="track" id="track1">
+        <div class="book">
+        </div>
+        <div class="book">
+        </div>
+        <div class="book">
+        </div>
+        <div class="book">
+        </div>
+        <div class="book">
+        </div>
+        <div class="book">
+        </div>
+        <div class="book">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

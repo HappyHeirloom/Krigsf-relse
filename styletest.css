@@ -1,0 +1,224 @@
+.slider {
+    position: relative;
+
+    background-color: #ccc;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+
+    overflow: hidden;
+}
+.track {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 2000px;
+}
+.våben {
+    float: left;
+
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+
+    width: 150px;
+    height: 150px;
+
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+}
+.våben:hover {
+    opacity: 0.5;
+}
+.våben:nth-child(1) {
+    background-image: url("longxu.jpg");
+    background-size: contain;
+}
+.våben:nth-child(2) {
+  background-image: url("bardiche.jpg");
+  background-size: contain;
+}
+.våben:nth-child(3) {
+  background-image: url("mukkert.jpg");
+  background-size: contain;
+}
+.våben:nth-child(4) {
+  background-image: url("morgenstjern.jpg");
+  background-size: contain;
+}
+.våben:nth-child(5) {
+  background-image: url("knobkierie.jpg");
+  background-size: contain;
+}
+.våben:nth-child(6) {
+  background-image: url("nunchuck.jpg");
+  background-size: contain;
+}
+.våben:nth-child(7) {
+  background-image: url("chakram.jpg");
+  background-size: contain;
+}
+.våben:nth-child(8) {
+  background-image: url("blunderbuss.jpg");
+  background-size: contain;
+}
+.våben:nth-child(9) {
+  background-image: url("sennepsgas.png");
+  background-size: contain;
+  background-repeat: round;
+}
+.våben:nth-child(10) {
+  background-image: url("napalm.jpg");
+  background-size: contain;
+  background-repeat: round;
+}
+
+.hjelm {
+    float: left;
+
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+
+    width: 150px;
+    height: 150px;
+
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+}
+.hjelm:hover {
+    opacity: 0.5;
+}
+.hjelm:nth-child(1) {
+    background-image: url("longxu.jpg");
+    background-size: contain;
+}
+.hjelm:nth-child(2) {
+  background-image: url("bardiche.jpg");
+  background-size: contain;
+}
+.hjelm:nth-child(3) {
+  background-image: url("mukkert.jpg");
+  background-size: contain;
+}
+.hjelm:nth-child(4) {
+  background-image: url("morgenstjern.jpg");
+  background-size: contain;
+}
+.hjelm:nth-child(5) {
+  background-image: url("knobkierie.jpg");
+  background-size: contain;
+}
+.hjelm:nth-child(6) {
+  background-image: url("nunchuck.jpg");
+  background-size: contain;
+}
+.hjelm:nth-child(7) {
+  background-image: url("chakram.jpg");
+  background-size: contain;
+}
+.hjelm:nth-child(8) {
+  background-image: url("blunderbuss.jpg");
+  background-size: contain;
+}
+.hjelm:nth-child(9) {
+  background-image: url("sennepsgas.png");
+  background-size: contain;
+  background-repeat: round;
+}
+.hjelm:nth-child(10) {
+  background-image: url("napalm.jpg");
+  background-size: contain;
+  background-repeat: round;
+}
+
+.andet {
+    float: left;
+
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+
+    width: 150px;
+    height: 150px;
+
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+}
+.andet:hover {
+    opacity: 0.5;
+}
+.andet:nth-child(1) {
+    background-image: url("longxu.jpg");
+    background-size: contain;
+}
+.andet:nth-child(2) {
+  background-image: url("bardiche.jpg");
+  background-size: contain;
+}
+.andet:nth-child(3) {
+  background-image: url("mukkert.jpg");
+  background-size: contain;
+}
+.andet:nth-child(4) {
+  background-image: url("morgenstjern.jpg");
+  background-size: contain;
+}
+.andet:nth-child(5) {
+  background-image: url("knobkierie.jpg");
+  background-size: contain;
+}
+.andet:nth-child(6) {
+  background-image: url("nunchuck.jpg");
+  background-size: contain;
+}
+.andet:nth-child(7) {
+  background-image: url("chakram.jpg");
+  background-size: contain;
+}
+.andet:nth-child(8) {
+  background-image: url("blunderbuss.jpg");
+  background-size: contain;
+}
+.andet:nth-child(9) {
+  background-image: url("sennepsgas.png");
+  background-size: contain;
+  background-repeat: round;
+}
+.andet:nth-child(10) {
+  background-image: url("napalm.jpg");
+  background-size: contain;
+  background-repeat: round;
+}
+
+.left, .right {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    top: 57px;
+
+    cursor: pointer;
+    z-index: 1;
+    color:red;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
