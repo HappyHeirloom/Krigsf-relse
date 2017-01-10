@@ -1,13 +1,30 @@
-
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: fnl;
+  src: url(fnl.ttf);
+}
+
+.name {
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  font-family: fnl;
+  font-weight: bold;
+  padding-left: 5px;
+  bottom: 0px;
+  color: black;
+
 }
 
 .slider {
     position: relative;
 
-    background-color: #ccc;
-    height: 150px;
+    background-color: #333;
+    min-height: 170px;
+    max-height: auto;
     margin: 10px;
     padding: 10px;
 
@@ -109,15 +126,17 @@
     opacity: 0.5;
 }
 .hjelm:nth-child(1) {
-    background-image: url("longxu.jpg");
-    background-size: contain;
+    background-image: url("stikhjelm.jpg");
+    background-size: fill;
+    background-repeat: round;
 }
 .hjelm:nth-child(2) {
-  background-image: url("bardiche.jpg");
+  background-image: url("visirhjelm.jpg");
   background-size: contain;
+  background-repeat: round;
 }
 .hjelm:nth-child(3) {
-  background-image: url("mukkert.jpg");
+  background-image: url("trallehjelm.jpg");
   background-size: contain;
 }
 .hjelm:nth-child(4) {
@@ -216,9 +235,10 @@
 
 .left, .right {
     position: absolute;
-    color: white;
+    color: red;
     font-size: 48px;
     top: 57px;
+    opacity: 0.5;
 
     cursor: pointer;
     z-index: 1;
