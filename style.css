@@ -118,15 +118,6 @@
 .våben:nth-child(8) {
   background-image: url("blunderbuss.jpg");
   background-size: contain;
-}
-.våben:nth-child(9) {
-  background-image: url("sennepsgas.png");
-  background-size: contain;
-  background-repeat: round;
-}
-.våben:nth-child(10) {
-  background-image: url("napalm.jpg");
-  background-size: contain;
   background-repeat: round;
 }
 
