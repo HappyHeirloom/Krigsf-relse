@@ -7,6 +7,21 @@
   src: url(fnl.ttf);
 }
 
+#middle {
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  height: 470px;
+  width: 300px;
+  left: 39%;
+  top: 150px;
+  padding: 10px;
+  z-index: 10;
+
+  background-color: white;
+}
+
 .name {
   position: absolute;
   font-size: 20px;
@@ -16,6 +31,16 @@
   padding-left: 5px;
   bottom: 0px;
   color: black;
+
+}
+
+.insidename {
+  position: absolute;
+  font-size: 15px;
+  font-style: italic;
+  font-family: fnl;
+  font-weight: 900;
+  bottom: 5px;
 
 }
 
@@ -105,7 +130,7 @@
   background-repeat: round;
 }
 
-.hjelm {
+.hjelmogrustning {
     float: left;
 
     margin: 0;
@@ -122,55 +147,33 @@
     -o-transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
 }
-.hjelm:hover {
+.hjelmogrustning:hover {
     opacity: 0.5;
 }
-.hjelm:nth-child(1) {
+.hjelmogrustning:nth-child(1) {
     background-image: url("stikhjelm.jpg");
     background-size: fill;
     background-repeat: round;
 }
-.hjelm:nth-child(2) {
+.hjelmogrustning:nth-child(2) {
   background-image: url("visirhjelm.jpg");
   background-size: contain;
   background-repeat: round;
 }
-.hjelm:nth-child(3) {
+.hjelmogrustning:nth-child(3) {
   background-image: url("trallehjelm.jpg");
   background-size: contain;
 }
-.hjelm:nth-child(4) {
-  background-image: url("morgenstjern.jpg");
-  background-size: contain;
+.hjelmogrustning:nth-child(4) {
+  background-image: url("brynje.jpg");
+  background-size: cover;
 }
-.hjelm:nth-child(5) {
-  background-image: url("knobkierie.jpg");
-  background-size: contain;
-}
-.hjelm:nth-child(6) {
-  background-image: url("nunchuck.jpg");
-  background-size: contain;
-}
-.hjelm:nth-child(7) {
-  background-image: url("chakram.jpg");
-  background-size: contain;
-}
-.hjelm:nth-child(8) {
-  background-image: url("blunderbuss.jpg");
-  background-size: contain;
-}
-.hjelm:nth-child(9) {
-  background-image: url("sennepsgas.png");
-  background-size: contain;
-  background-repeat: round;
-}
-.hjelm:nth-child(10) {
-  background-image: url("napalm.jpg");
-  background-size: contain;
-  background-repeat: round;
+.hjelmogrustning:nth-child(5) {
+  background-image: url("plade.jpg");
+  background-size: cover;
 }
 
-.andet {
+.maskine {
     float: left;
 
     margin: 0;
@@ -187,51 +190,42 @@
     -o-transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
 }
-.andet:hover {
+.maskine:hover {
     opacity: 0.5;
 }
-.andet:nth-child(1) {
-    background-image: url("longxu.jpg");
-    background-size: contain;
+.maskine:nth-child(1) {
+    background-image: url("Katapult.png");
+    background-size: cover;
 }
-.andet:nth-child(2) {
+.maskine:nth-child(2) {
   background-image: url("bardiche.jpg");
   background-size: contain;
 }
-.andet:nth-child(3) {
+.maskine:nth-child(3) {
   background-image: url("mukkert.jpg");
   background-size: contain;
 }
-.andet:nth-child(4) {
+.maskine:nth-child(4) {
   background-image: url("morgenstjern.jpg");
   background-size: contain;
 }
-.andet:nth-child(5) {
-  background-image: url("knobkierie.jpg");
+.maskine:nth-child(5) {
+  background-image: url("morgenstjern.jpg");
   background-size: contain;
 }
-.andet:nth-child(6) {
-  background-image: url("nunchuck.jpg");
+.maskine:nth-child(6) {
+  background-image: url("morgenstjern.jpg");
   background-size: contain;
 }
-.andet:nth-child(7) {
-  background-image: url("chakram.jpg");
+.maskine:nth-child(7) {
+  background-image: url("morgenstjern.jpg");
   background-size: contain;
 }
-.andet:nth-child(8) {
-  background-image: url("blunderbuss.jpg");
+.maskine:nth-child(8) {
+  background-image: url("morgenstjern.jpg");
   background-size: contain;
 }
-.andet:nth-child(9) {
-  background-image: url("sennepsgas.png");
-  background-size: contain;
-  background-repeat: round;
-}
-.andet:nth-child(10) {
-  background-image: url("napalm.jpg");
-  background-size: contain;
-  background-repeat: round;
-}
+
 
 .left, .right {
     position: absolute;
@@ -251,7 +245,9 @@
 }
 
 #imginside {
-  width:100px;
+  min-width:70px;
+  max-width: 90px;
+  max-height: 100px;
 }
 
 #navbar {
